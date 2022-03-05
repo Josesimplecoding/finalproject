@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory }from "vue-router";
 import Index from "./pages/index.vue";
 import About from "./pages/about.vue";
-import Hello from "./pages/hello.vue";
+import Available from "./pages/available.vue";
+import Quote from "./pages/quote.vue";
+import Payment from "./pages/payment.vue";
+import Login from "./pages/login.vue";
 import NotFound from "./pages/404.vue";
 
 
@@ -13,13 +16,28 @@ const routes = [
     },
     {
         path: "/about",
-        name: "About",
+        name: "About Us",
         component: About,
     },
     {
-        path: "/hello",
-        name: "Hello",
-        component: Hello,
+        path: "/available",
+        name: "Available",
+        component: Available,
+    },
+    {
+        path: "/quote",
+        name: "Get a quote",
+        component: Quote,
+    },
+    {
+        path: "/payment",
+        name: "Make a payment",
+        component: Payment,
+    },
+    {
+        path: "/login",
+        name: "Login",
+        component: Login,
     },
     {
         path: "/:pathMatch(.*)*",

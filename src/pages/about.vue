@@ -1,3 +1,3 @@
 <template>
-    <h1>About Page</h1>
+    <h1>Contains information about what is proctected and how it started</h1>
 </template>

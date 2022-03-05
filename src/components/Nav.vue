@@ -1,18 +1,26 @@
 <template>
-    <div class="bg-green-900 text-green-200">
-        <div class="container mx-auto flex items-center justify-between">
-            <h1 class="tracking-tighter text-3xl font-thin">
-                Basic<span class="font-normal">Router</span></h1>
+    <div class="text-blue-100 bg-blue-900">
+        <div class="container flex items-center justify-between mx-auto">
+            <h1 class="text-3xl font-normal tracking-tight">J's<span class="font-normal"> Auto Insurance</span></h1>
             <nav>
                 <ul class="flex space-x-4">
                     <router-link to="/">
-                        <li class="py-8 px-4 hover:cursor-pointer hover:bg-green-500 hover:text-green-800"> Home </li>
+                        <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800"> Home </li>
                     </router-link>
                     <router-link to="/about">
-                        <li class="py-8 px-4 hover:cursor-pointer hover:bg-green-500 hover:text-green-800">About</li>
+                        <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800">About Us</li>
                     </router-link>
-                    <router-link to="/hello">
-                        <li class="py-8 px-4 hover:cursor-pointer hover:bg-green-500 hover:text-green-800">Hello</li>
+                    <router-link to="/available">
+                        <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800">Available Insurance</li>
+                    </router-link>
+                    <router-link to="/quote">
+                        <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800">Get a quote</li>
+                    </router-link>
+                    <router-link to="/payment">
+                        <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800">Make a payment</li>
+                    </router-link>
+                    <router-link to="/login">
+                        <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800">Login</li>
                     </router-link>
                 </ul>
             </nav>
