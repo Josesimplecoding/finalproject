@@ -1,7 +1,7 @@
 <template>
     <div class="text-blue-100 bg-blue-900">
         <div class="container flex items-center justify-between mx-auto">
-            <h1 class="text-3xl font-normal tracking-tight">J's<span class="font-normal"> Auto Insurance</span></h1>
+            <h1 class="text-3xl font-normal tracking-tight">Auto Insurance Project</h1>
             <nav>
                 <ul class="flex space-x-4">
                     <router-link to="/">
