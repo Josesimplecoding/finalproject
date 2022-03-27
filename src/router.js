@@ -33,6 +33,9 @@ const routes = [
         path: "/payment",
         name: "Make a payment",
         component: Payment,
+        beforeEnter: (to, from, next) => {
+            next("/");
+        }
     },
     {
         path: "/login",

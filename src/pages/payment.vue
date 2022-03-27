@@ -1,3 +1,3 @@
 <template>
-    <h1>Page that will allow customers to make a payment.</h1>
+    <h1>This page is only visible when signed in</h1>
 </template>
