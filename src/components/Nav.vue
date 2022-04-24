@@ -28,7 +28,13 @@ const { isAuthenticated, logout } = useAuth()
                         <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800">Make a payment</li>
                     </router-link>
                     <button @click="logout">
-                        <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800">Logout</li>
+                        <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800">
+                            <div class="navigation-items__item navigation-items__item--level-2">
+                                <a class="navigation-items__link" href="/login">
+                                    logout
+                                </a>
+                            </div>
+                        </li>
                     </button>
                 </ul>
             </nav>
