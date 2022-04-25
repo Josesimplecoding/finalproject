@@ -22,7 +22,15 @@ const { isAuthenticated, logout } = useAuth()
                         <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800">Get a quote</li>
                     </router-link>
                     <router-link v-if="!isAuthenticated" to="/login">
-                        <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800">Login</li>
+                    <button @click="login">
+                        <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800">
+                            <div class="navigation-items__item navigation-items__item--level-2">
+                                <a class="navigation-items__link" href="/about">
+                                    login
+                                </a>
+                            </div>
+                        </li>
+                    </button>
                     </router-link>
                     <router-link v-else to="/payment">
                         <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800">Make a payment</li>
