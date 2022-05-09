@@ -3,7 +3,6 @@ import Index from "./pages/index.vue";
 import About from "./pages/about.vue";
 import Available from "./pages/available.vue";
 import Quote from "./pages/quote.vue";
-import Payment from "./pages/payment.vue";
 import Login from "./pages/login.vue";
 import NotFound from "./pages/404.vue";
 
@@ -28,14 +27,6 @@ const routes = [
         path: "/quote",
         name: "Get a quote",
         component: Quote,
-    },
-    {
-        path: "/payment",
-        name: "Make a payment",
-        component: Payment,
-        beforeEnter: (to, from, next) => {
-            next("/");
-        }
     },
     {
         path: "/login",

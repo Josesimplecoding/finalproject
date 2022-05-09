@@ -32,9 +32,6 @@ const { isAuthenticated, logout } = useAuth()
                         </li>
                     </button>
                     </router-link>
-                    <router-link v-else to="/payment">
-                        <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800">Make a payment</li>
-                    </router-link>
                     <button @click="logout">
                         <li class="px-4 py-8 hover:cursor-pointer hover:bg-blue-100 hover:text-blue-800">
                             <div class="navigation-items__item navigation-items__item--level-2">
