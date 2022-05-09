@@ -1,4 +1,14 @@
+<script setup>
+import useAuth from "../composable/useAuth";
+const { isAuthenticated, user } = useAuth();
+</script>
+
 <template>
+<div class="flex flex-col items-center space-y-12 justfiy-center min-h-screen-nonav">
+    <h2 v-if="!isAuthenticated" class="text-6xl tracking-tighter font-extralight">Welcome</h2>
+    <h2 v-else class="text-6xl tracking-tighter font-extralight">Welcome {{user}}</h2>
+    <img src="../assets/bgindex.png" alt="Hello BG"/>
+</div>
     <h1>Welcome to the the most affordable insurance for not only the first time drivers.</h1>
     <div class="flex items-center justify-center rounded-lg shadow-2xl">
         <form class="flex-col p-2 space-y-2"/>

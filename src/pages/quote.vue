@@ -1,5 +1,5 @@
 <template>
-    <h1 class="flex items-center justify-center rounded-lg shadow-2xl cmp-title_text">
+    <h1 class="flex items-center justify-center font-bold rounded-lg shadow-2xl cmp-title_text">
         Get Your Quote Below
     </h1>
     <div class="flex items-center justify-center rounded-lg shadow-2xl w-100">
@@ -16,8 +16,7 @@
         <small class="input-label">Date of Birth</small>
         <input pattern="\d*" inputmode="numeric" class="form-control amax-calendar" value="01/01/00">
     </div>
-
-    <h3 class="flex items-center justify-center rounded-lg">Enter vehicle information below</h3>
+    <h3 class="flex items-center justify-center font-bold rounded-lg">Enter vehicle information below</h3>
     <div>
         <div class="container">
             <div class="row">
